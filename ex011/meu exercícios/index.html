@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídia</title>
+</head>
+<body>
+    <p>Você pode vizualizar meu perfil em tamanhos diferentes conforme os dispositivo.</p>
+    <picture>
+        <source media="(max-width: 300px )" srcset="imagem/foto-150px.png" type="image/png">
+        <source media="(max-width: 750px )" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="mídia/luz-solart.mp3" controls autoplay></audio>
+
+    <p>Ouça tambem:</p>
+    <audio preload="metadata" controls loop>
+        <source src="mídia/kids-playing.mp3" type="audio/mpeg">
+        <source src="mídia/kids-playing.ogg" type="audio/ogg">
+        <source src="mídia/kids-playing.wav" type="audio/wav">   
+        <p>Infelizmente não foi possível abrir o áudio no seu navegador, <a href="mídia/kids-playing.mp3">Clique aqui</a> e baixe o arquivo MP3.</p>
+    </audio>
+
+</body>
+</html>
